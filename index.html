@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <title>Regras do Chat</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+       
+       <div class="title-container">
+            <h1>🤖REGRAS</h1>
+             <hr>
+            <p1 style="font-style: italic;">Concordar e seguir regras do chat VTO é essencial para ambiente respeitoso.</p1>
+ <hr>
+        <div class="option">
+            <div class="option-title" onclick="toggleExpand(1)">
+                1. Spam / Flood:
+                <span class="expand-button"></span>
+            </div>
+            <div class="expanded" id="option1">
+                Não é permitido o envio repetitivo e excessivo de mensagens (spam) ou caracteres (flood) que atrapalhem a comunicação normal no chat.
+            </div>
+        </div>
+<div class="dotted-line"></div>
+        <div class="option">
+            <div class="option-title" onclick="toggleExpand(2)">
+                2. Caps Lock:
+                <span class="expand-button"></span>
+            </div>
+            <div class="expanded" id="option2">
+               Evite escrever em letras maiúsculas (CAPS LOCK), pois isso é considerado como gritar e pode causar lag aos outros usuários, além de ser desrespeitoso."
+            </div>
+        </div>
+
+ <div class="dotted-line"></div>
+
+<div class="option">
+            <div class="option-title" onclick="toggleExpand(3)">
+                3. Exposição de Dados Pessoais:
+                <span class="expand-button"></span>
+            </div>
+            <div class="expanded" id="option3">
+                É estritamente proibido compartilhar informações pessoais suas ou de outras pessoas, como números de telefone, endereços, ou dados sensíveis.
+            </div>
+        </div>
+
+<div class="dotted-line"></div>
+
+        <div class="option">
+            <div class="option-title" onclick="toggleExpand(4)">
+                4. Racismo / Preconceito:
+                <span class="expand-button"></span>
+            </div>
+            <div class="expanded" id="option4">
+                Não é tolerada qualquer forma de discurso de ódio, racismo, preconceito ou discriminação. Respeite a diversidade.
+            </div>
+        </div>
+ 
+ <div class="dotted-line"></div>
+
+        <div class="option">
+            <div class="option-title" onclick="toggleExpand(5)">
+                5. Nicks em Caps Lock:
+                <span class="expand-button"></span>
+            </div>
+            <div class="expanded" id="option5">
+                Nomes de usuário (nicks) com mais de 3 palavras em letras maiúsculas (CAPS LOCK) não são permitidos.
+            </div>
+        </div>
+
+<div class="dotted-line"></div>
+
+        <div class="option">
+            <div class="option-title" onclick="toggleExpand(6)">
+               6. Divulgação de Outros Xats ou Links:
+                <span class="expand-button"></span>
+            </div>
+            <div class="expanded" id="option6">
+                Não é permitido divulgar outros xats, links de terceiros ou publicidade sem a permissão da administração.
+            </div>
+        </div>
+ 
+ <div class="dotted-line"></div>
+
+        <div class="option">
+            <div class="option-title" onclick="toggleExpand(7)">
+                7. Apologia a Drogas:
+                <span class="expand-button"></span>
+            </div>
+            <div class="expanded" id="option7">
+                Não é permitido nicks ou mensagens que façam apologia ao uso de drogas.
+            </div>
+        </div>
+
+<div class="dotted-line"></div>
+
+        <div class="option">
+            <div class="option-title" onclick="toggleExpand(8)">
+               8. Imagens e Mensagens Inapropriadas:
+                <span class="expand-button"></span>
+            </div>
+            <div class="expanded" id="option8">
+                Evite compartilhar imagens ou mensagens que possam ser consideradas ofensivas, vulgares ou desrespeitosas.
+            </div>
+        </div>
+
+<div class="dotted-line"></div>
+        
+        <div class="option">
+            <div class="option-title" onclick="toggleExpand(9)">
+                9. Ofensas:
+                <span class="expand-button"></span>
+            </div>
+            <div class="expanded" id="option9">
+                Evite ofender outros membros do xat. O desrespeito constante pode resultar em banimento.
+            </div>
+        </div>
+
+<div class="dotted-line"></div>
+
+        <div class="option">
+            <div class="option-title" onclick="toggleExpand(10)">
+                10. Envio de kisses como Tubarão e Hipopotamo :
+                <span class="expand-button"></span>
+            </div>
+            <div class="expanded" id="option10">
+               É estritamente proibido o envio de kisses que faz muito barulho como tubarão e hipopótamo.
+            </div>
+        </div>
+
+<div class="dotted-line"></div>
+
+        <div class="option">
+            <div class="option-title" onclick="toggleExpand(11)">
+                11. Sanções:
+                <span class="expand-button"></span>
+            </div>
+            <div class="expanded" id="option11">
+                A administração do VTO se reserva o direito de advertir, kickar, mutar ou banir temporariamente ou permanentemente usuários que violem repetidamente essas regras.
+            </div>
+        </div>
+
+        <!-- Adicione mais opções conforme necessário -->
+
+
+<button id="expand-button">
+  <i class="fa fa-arrow-circle-down"></i> STAFF
+</button>
+
+<div class="table-container" id="table-container">
+
+  <table class="custom-table">
+    <thead>
+      <tr>
+        <th class="center-header"><strong>Cargo</strong></th>
+        <th class="center-header"><strong>Nome</strong></th>
+        <th class="center-header"><strong>ID</strong></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="center-cell main"><strong>Main Owner</strong></td>
+        <td class="center-cell">
+          <a href="https://xat.me/202020" class="custom-link-main">
+            <img class="profile-image" src="https://i.imgur.com/dLAjy6z.png" alt="vto">
+            <strong>BrunoT</strong>
+          </a>
+        </td>
+        <td class="center-cell"><strong class="white-id">(202020)</strong></td>
+        <td class="center-cell">
+          
+        </td>
+<!-- Linha pontilhada -->
+<tr class="dotted-line">
+    <td colspan="4"></td>
+</tr>
+
+<!-- Segunda linha -->
+ <!--  AAAAAAAAAAAAAAA   -->
+         <tr>
+        <td class="center-cell main"><strong>Main Owner</strong></td>
+        <td class="center-cell">
+          <a href="https://xat.me/379626375" class="custom-link-main">
+            <img class="profile-image" src="https://i.imgur.com/dLAjy6z.png" alt="vto">
+            <strong>Angie</strong>
+          </a>
+        </td>
+        <td class="center-cell"><strong class="white-id">(379626375)</strong></td>
+
+        <td class="center-cell">
+          
+        </td>
+
+
+ <!--  AAAAAAAAAAAAAAA   -->
+<!-- Linha pontilhada -->
+<tr class="dotted-line">
+    <td colspan="4"></td>
+</tr>
+
+<!-- Segunda linha -->
+         <tr>
+        <td class="center-cell main"><strong>Main Owner</strong></td>
+        <td class="center-cell">
+          <a href="https://xat.me/1302106930" class="custom-link-main">
+            <img class="profile-image" src="https://i.imgur.com/dLAjy6z.png" alt="vto">
+            <strong>Naomi</strong>
+          </a>
+        </td>
+        <td class="center-cell"><strong class="white-id">(1302106930)</strong></td>
+        <td class="center-cell">
+          
+        </td>
+ <!--  AAAAAAAAAAAAAAA   -->
+<!-- Linha pontilhada -->
+<tr class="dotted-line">
+    <td colspan="4"></td>
+</tr>
+
+<!-- Segunda linha -->
+         <tr>
+        <td class="center-cell main"><strong>Main Owner</strong></td>
+        <td class="center-cell">
+          <a href="https://xat.me/8989" class="custom-link-main">
+            <img class="profile-image" src="https://i.imgur.com/dLAjy6z.png" alt="vto">
+            <strong>Felina</strong>
+          </a>
+        </td>
+        <td class="center-cell"><strong class="white-id">(8989)</strong></td>
+        <td class="center-cell">
+          
+        </td>
+ <!--  AAAAAAAAAAAAAAA   -->
+ <!-- Linha pontilhada -->
+<tr class="dotted-line">
+    <td colspan="4"></td>
+</tr>
+
+<!-- Segunda linha -->
+         <tr>
+        <td class="center-cell owner"><strong>Owner</strong></td>
+        <td class="center-cell">
+          <a href="https://xat.me/1458188613" class="custom-link-owner">
+            <img class="profile-image" src="https://i.imgur.com/SnhVpry.png" alt="vto">
+            <strong>Baracka</strong>
+          </a>
+        </td>
+        <td class="center-cell"><strong class="white-id">(1458188613)</strong></td>
+        <td class="center-cell">
+          
+        </td>
+ <!--  AAAAAAAAAAAAAAA   -->
+ <!-- Linha pontilhada -->
+<tr class="dotted-line">
+    <td colspan="4"></td>
+</tr>
+
+<!-- Segunda linha -->
+         <tr>
+        <td class="center-cell owner"><strong>Owner</strong></td>
+        <td class="center-cell">
+          <a href="https://xat.me/280741070" class="custom-link-owner">
+            <img class="profile-image" src="https://i.imgur.com/SnhVpry.png" alt="vto">
+            <strong>Bia</strong>
+          </a>
+        </td>
+        <td class="center-cell"><strong class="white-id">(280741070)</strong></td>
+        <td class="center-cell">
+          
+        </td>
+ <!--  AAAAAAAAAAAAAAA   -->
+ <!-- Linha pontilhada -->
+<tr class="dotted-line">
+    <td colspan="4"></td>
+</tr>
+
+<!-- Segunda linha -->
+         <tr>
+        <td class="center-cell owner"><strong>Owner</strong></td>
+        <td class="center-cell">
+          <a href="https://xat.me/1506390487" class="custom-link-owner">
+            <img class="profile-image" src="https://i.imgur.com/SnhVpry.png" alt="vto">
+            <strong>Babi</strong>
+          </a>
+        </td>
+        <td class="center-cell"><strong class="white-id">(1506390487)</strong></td>
+        <td class="center-cell">
+          
+        </td>
+ <!--  AAAAAAAAAAAAAAA   -->
+ <!-- Linha pontilhada -->
+<tr class="dotted-line">
+    <td colspan="4"></td>
+</tr>
+
+<!-- Segunda linha -->
+
+         <tr>
+        <td class="center-cell owner"><strong>Owner</strong></td>
+        <td class="center-cell">
+          <a href="https://xat.me/8989" class="custom-link-owner">
+            <img class="profile-image" src="https://i.imgur.com/SnhVpry.png" alt="vto">
+            <strong>Fada</strong>
+          </a>
+        </td>
+        <td class="center-cell"><strong class="white-id">(8989)</strong></td>
+        <td class="center-cell">
+          
+        </td>
+ <!--  AAAAAAAAAAAAAAA   -->
+ <!-- Linha pontilhada -->
+<tr class="dotted-line">
+    <td colspan="4"></td>
+</tr>
+
+<!-- Segunda linha -->
+         <tr>
+        <td class="center-cell owner"><strong>Owner</strong></td>
+        <td class="center-cell">
+          <a href="https://xat.me/8989" class="custom-link-owner">
+            <img class="profile-image" src="https://i.imgur.com/SnhVpry.png" alt="vto">
+            <strong>Nicollas</strong>
+          </a>
+        </td>
+        <td class="center-cell"><strong class="white-id">(8989)</strong></td>
+        <td class="center-cell">
+          
+        </td>
+ <!--  AAAAAAAAAAAAAAA   -->
+ <!-- Linha pontilhada -->
+<tr class="dotted-line">
+    <td colspan="4"></td>
+</tr>
+
+<!-- Segunda linha -->
+         <tr>
+        <td class="center-cell owner"><strong>Owner</strong></td>
+        <td class="center-cell">
+          <a href="https://xat.me/923988009" class="custom-link-owner">
+            <img class="profile-image" src="https://i.imgur.com/SnhVpry.png" alt="vto">
+            <strong>Diaba</strong>
+          </a>
+        </td>
+        <td class="center-cell"><strong class="white-id">(923988009)</strong></td>
+        <td class="center-cell">
+          
+        </td>
+ <!--  AAAAAAAAAAAAAAA   -->
+ <!-- Linha pontilhada -->
+<tr class="dotted-line">
+    <td colspan="4"></td>
+</tr>
+
+<!-- Segunda linha -->
+         <tr>
+        <td class="center-cell owner"><strong>Owner</strong></td>
+        <td class="center-cell">
+          <a href="https://xat.me/1538805988" class="custom-link-owner">
+            <img class="profile-image" src="https://i.imgur.com/SnhVpry.png" alt="vto">
+            <strong>Sofia</strong>
+          </a>
+        </td>
+        <td class="center-cell"><strong class="white-id">(1538805988)</strong></td>
+        <td class="center-cell">
+          
+        </td>
+ <!--  AAAAAAAAAAAAAAA   -->
+ <!-- Linha pontilhada -->
+<tr class="dotted-line">
+    <td colspan="4"></td>
+</tr>
+
+<!-- Segunda linha -->
+
+         <tr>
+        <td class="center-cell owner"><strong>Owner</strong></td>
+        <td class="center-cell">
+          <a href="https://xat.me/986214794" class="custom-link-owner">
+            <img class="profile-image" src="https://i.imgur.com/SnhVpry.png" alt="vto">
+            <strong>Drika</strong>
+          </a>
+        </td>
+        <td class="center-cell"><strong class="white-id">(986214794)</strong></td>
+        <td class="center-cell">
+          
+        </td>
+ <!--  AAAAAAAAAAAAAAA   -->
+
+        <!-- Linha pontilhada -->
+<tr class="dotted-line">
+    <td colspan="4"></td>
+</tr>
+
+<!-- Segunda linha -->
+ <!--  AAAAAAAAAAAAAAA   -->
+         <tr>
+        <td class="center-cell mod"><strong>Mod</strong></td>
+        <td class="center-cell">
+          <a href="https://xat.me/8989" class="custom-link-mod">
+            <img class="profile-image" src="https://i.imgur.com/4C5Q4KT.png" alt="vto">
+            <strong>Missy</strong>
+          </a>
+        </td>
+        <td class="center-cell"><strong class="white-id">(8989)</strong></td>
+        <td class="center-cell">
+          
+        </td>
+ <!--  AAAAAAAAAAAAAAA   -->
+ <!-- Linha pontilhada -->
+<tr class="dotted-line">
+    <td colspan="4"></td>
+</tr>
+
+<!-- Segunda linha -->
+         <tr>
+        <td class="center-cell mod"><strong>Mod</strong></td>
+        <td class="center-cell">
+          <a href="https://xat.me/1227439913" class="custom-link-mod">
+            <img class="profile-image" src="https://i.imgur.com/4C5Q4KT.png" alt="vto">
+            <strong>Luly</strong>
+          </a>
+        </td>
+        <td class="center-cell"><strong class="white-id">(1227439913)</strong></td>
+        <td class="center-cell">
+          
+        </td>
+ <!--  AAAAAAAAAAAAAAA   -->
+ <!-- Linha pontilhada -->
+<tr class="dotted-line">
+    <td colspan="4"></td>
+</tr>
+
+<!-- Segunda linha -->
+
+         <tr>
+        <td class="center-cell mod"><strong>Mod</strong></td>
+        <td class="center-cell">
+          <a href="https://xat.me/8989" class="custom-link-mod">
+            <img class="profile-image" src="https://i.imgur.com/4C5Q4KT.png" alt="vto">
+            <strong>Chris</strong>
+          </a>
+        </td>
+        <td class="center-cell"><strong class="white-id">(8989)</strong></td>
+        <td class="center-cell">
+          
+        </td>
+
+ <!--  AAAAAAAAAAAAAAA   -->
+ <!-- Linha pontilhada -->
+<tr class="dotted-line">
+    <td colspan="4"></td>
+</tr>
+
+<!-- Segunda linha -->
+         <tr>
+        <td class="center-cell mod"><strong>Mod</strong></td>
+        <td class="center-cell">
+          <a href="https://xat.me/1539814772" class="custom-link-mod">
+            <img class="profile-image" src="https://i.imgur.com/4C5Q4KT.png" alt="vto">
+            <strong>Jean</strong>
+          </a>
+        </td>
+        <td class="center-cell"><strong class="white-id">(1539814772)</strong></td>
+        <td class="center-cell">
+          
+        </td>
+ <!--  AAAAAAAAAAAAAAA   -->
+ <!-- Linha pontilhada -->
+<tr class="dotted-line">
+    <td colspan="4"></td>
+</tr>
+
+<!-- Segunda linha -->
+
+         <tr>
+        <td class="center-cell mod"><strong>Mod</strong></td>
+        <td class="center-cell">
+          <a href="https://xat.me/1551096326" class="custom-link-mod">
+            <img class="profile-image" src="https://i.imgur.com/4C5Q4KT.png" alt="vto">
+            <strong>Vah</strong>
+          </a>
+        </td>
+        <td class="center-cell"><strong class="white-id">(1551096326)</strong></td>
+        <td class="center-cell">
+          
+        </td>
+ <!--  AAAAAAAAAAAAAAA   -->
+ <!-- Linha pontilhada -->
+<tr class="dotted-line">
+    <td colspan="4"></td>
+</tr>
+
+<!-- Segunda linha -->
+         <tr>
+        <td class="center-cell mod"><strong>Mod</strong></td>
+        <td class="center-cell">
+          <a href="https://xat.me/1528053559" class="custom-link-mod">
+            <img class="profile-image" src="https://i.imgur.com/4C5Q4KT.png" alt="vto">
+            <strong>Lua</strong>
+          </a>
+        </td>
+        <td class="center-cell"><strong class="white-id">(1528053559)</strong></td>
+        <td class="center-cell">
+          
+        </td>
+
+ <!--  AAAAAAAAAAAAAAA   -->
+ <!-- Linha pontilhada -->
+<tr class="dotted-line">
+    <td colspan="4"></td>
+</tr>
+
+<!-- Segunda linha -->
+         <tr>
+        <td class="center-cell mod"><strong>Mod</strong></td>
+        <td class="center-cell">
+          <a href="https://xat.me/1991" class="custom-link-mod">
+            <img class="profile-image" src="https://i.imgur.com/4C5Q4KT.png" alt="vto">
+            <strong>Loop</strong>
+          </a>
+        </td>
+        <td class="center-cell"><strong class="white-id">(1991)</strong></td>
+        <td class="center-cell">
+          
+        </td>
+
+ <!--  AAAAAAAAAAAAAAA   -->
+ <!-- Linha pontilhada -->
+<tr class="dotted-line">
+    <td colspan="4"></td>
+</tr>
+
+<!-- Segunda linha -->
+
+         <tr>
+        <td class="center-cell mod"><strong>Mod</strong></td>
+        <td class="center-cell">
+          <a href="https://xat.me/111100" class="custom-link-mod">
+            <img class="profile-image" src="https://i.imgur.com/4C5Q4KT.png" alt="vto">
+            <strong>Vitu</strong>
+          </a>
+        </td>
+        <td class="center-cell"><strong class="white-id">(111100)</strong></td>
+        <td class="center-cell">
+          
+        </td>
+
+ <!--  AAAAAAAAAAAAAAA   -->
+ <!-- Linha pontilhada -->
+<tr class="dotted-line">
+    <td colspan="4"></td>
+</tr>
+
+<!-- Segunda linha -->
+         <tr>
+        <td class="center-cell mod"><strong>Mod</strong></td>
+        <td class="center-cell">
+          <a href="https://xat.me/1527218554" class="custom-link-mod">
+            <img class="profile-image" src="https://i.imgur.com/4C5Q4KT.png" alt="vto">
+            <strong>Malevola</strong>
+          </a>
+        </td>
+        <td class="center-cell"><strong class="white-id">(1527218554)</strong></td>
+        <td class="center-cell">
+          
+        </td>
+
+ <!--  AAAAAAAAAAAAAAA   -->
+ <!-- Linha pontilhada -->
+<tr class="dotted-line">
+    <td colspan="4"></td>
+</tr>
+
+<!-- Segunda linha -->
+
+         <tr>
+        <td class="center-cell mod"><strong>Mod</strong></td>
+        <td class="center-cell">
+          <a href="https://xat.me/1547447774" class="custom-link-mod">
+            <img class="profile-image" src="https://i.imgur.com/4C5Q4KT.png" alt="vto">
+            <strong>Snif</strong>
+          </a>
+        </td>
+        <td class="center-cell"><strong class="white-id">(1547447774)</strong></td>
+        <td class="center-cell">
+          
+        </td>
+
+ <!--  AAAAAAAAAAAAAAA   -->
+ <!-- Linha pontilhada -->
+<tr class="dotted-line">
+    <td colspan="4"></td>
+</tr>
+
+<!-- Segunda linha -->
+
+     
+
+      </tr>
+      <!-- Adicione mais linhas conforme necessário -->
+    </tbody>
+  </table>
+</div>
+</div>
+    </div>
+
+    <script>
+        function toggleExpand(optionNumber) {
+            var expanded = document.getElementById("option" + optionNumber);
+            expanded.classList.toggle("active");
+        }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const expandButton = document.getElementById("expand-button");
+  const tableContainer = document.getElementById("table-container");
+
+  expandButton.addEventListener("click", function () {
+    if (tableContainer.style.display === "none" || tableContainer.style.display === "") {
+      tableContainer.style.display = "block"; // Mostrar o container
+      
+    } else {
+      tableContainer.style.display = "none"; // Ocultar o container
+      
+    }
+  });
+});
+
+expandButton.addEventListener("click", function () {
+  if (tableContainer.style.display === "none" || tableContainer.style.display === "") {
+    tableContainer.style.display = "block"; // Mostrar o container
+    expandButton.innerHTML = '<i class=""></i> Recolher'; // Atualizar o texto do botão e o ícone
+  } else {
+    tableContainer.style.display = "none"; // Ocultar o container
+    expandButton.innerHTML = '<i class="   x  "></i> Expandir'; // Atualizar o texto do botão e o ícone
+  }
+});
+
+
+    </script>
+   
+</body>
+</html>
+
