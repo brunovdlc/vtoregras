@@ -44,7 +44,7 @@ body {
         }
 
         .expand-button::after {
-            content: '▶'; /* Ícone de seta para a direita */
+            content: 'Click ✅'; /* Ícone de seta para a direita */
             margin-left: 10px;
         }
 
